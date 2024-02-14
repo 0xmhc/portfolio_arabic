@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+*{
+    list-style-type: none;
+}
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.card{
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);
+}
+.card button{
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: teal;
+    padding: 8px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card button:hover{
+    opacity: .8;
+}
+body{
+    text-align: center;
+    overflow-x: hidden;
+    font-family: 'Harmattan', sans-serif;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.btn{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin: 2px 4px;
+    opacity: 1;
+    transition: .5s;
+}
+.btn:hover{
+    opacity: .8;
+}
+@media (max-width:800px){
+    .column {
+        width: 100%;
+    }
+}
+.title-fade-in{
+    opacity: 100;
+    animation: fade-in 2s;
+}
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 100;
+    }
+}
+.title-fade-out {
+    opacity: 0;
+    animation: fade-out 2s;
+}
+@keyframes fade-out {
+    from {
+        opacity: 100;
+    };
+    to {
+        opacity: 0;
+    }
+}
+.gallery{
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+}
+.gallery img:hover{
+    filter: brightness(50%);
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.gallery p{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
